@@ -1,4 +1,4 @@
-/* Import Google font - Open Sans */
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 * {
   margin: 0;
@@ -7,7 +7,8 @@
   font-family: 'Open Sans', sans-serif;
 }
 body {
-  background: url(bagr.jpg );
+
+  background: #ACE2E1;
   
 }
 h1 {
@@ -24,6 +25,7 @@ h1 {
 }
 .weather-input {
   width: 550px;
+ 
 }
 .weather-input input {
   height: 46px;
@@ -39,23 +41,7 @@ h1 {
   padding: 0 16px;
   border: 2px solid #190482;
 }
-/* .weather-input .separator {
-  height: 1px;
-  width: 100%;
-  margin: 25px 0;
-  background: #E3F2FD;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-.weather-input .separator::before{
-  /* content: "or"; */
-  color: #6C757D;
-  font-size: 1.18rem;
-  padding: 0 15px;
-  margin-top: -4px;
-  background: #E3F2FD;
-}
+
 .weather-input button {
   width: 100%;
   padding: 10px 0;
@@ -71,9 +57,7 @@ h1 {
 .weather-input .search-btn:hover {
   background: #190482;
 }
-.weather-input .location-btn {
-  background: #190482;
-}
+
 .weather-input .location-btn:hover {
   background: #190482;
 }
@@ -131,6 +115,71 @@ h1 {
 .weather-cards .card img {
   max-width: 70px;
   margin: 5px 0 -12px 0;
+}
+.item1{
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center;
+  text-align: center; */
+ 
+}
+
+#calcTemp {
+  padding: 29px 67px;
+  min-height: 290px;
+  background-color: #F1EEDC;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+label {
+  font-size: 30px;
+  line-height: 78px;
+}
+
+#temp {
+  width: 110px;
+  height: 34px;
+  border-radius: 5px;
+  margin: 12px;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+
+#temp_diff {
+  width: 120px;
+  height: 34px;
+  border-radius: 5px;
+  margin: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+
+#submit {
+  width: 100px;
+  border-radius: 5px;
+  margin: 30px 0 20px 0;
+  font-size: 18px;
+  background-color: rgb(218 229 220);
+  padding: 5px;
+  transition: all 0.5s ease;
+}
+
+#submit:hover{
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
+#result{
+  font-size: 27px;
 }
 
 

@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Weather App Project JavaScript | CodingNepal</title>
+    <title>Weather App </title>
     <link rel="stylesheet" href="index.css">
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js" defer></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <h1>Weather </h1>
     <div class="container">
+      <div class="item1">
       <div class="weather-input">
         <h3>Enter a City Name</h3>
         <input class="city-input" type="text" placeholder="Maroc, New York, London, Tokyo">
         <button class="search-btn">Search</button>
-        <div class="separator"></div>
-        <!-- <button class="location-btn" > <i class="material-icons" style="font-size:30px;">person_pin_circle</i></button> -->
+       
+       
+
+       
       </div>
+   
+  </div>
       <div class="weather-data">
         <div class="current-weather">
           <div class="details">
@@ -67,8 +74,9 @@
         </div>
       </div>
     </div>
-    <div class="container1">
-      <canvas id="myChart"></canvas>
-  </div>
+   
+  <canvas id="weatherChart" width="400" height="200"></canvas>
+
+
   </body>
 </html>
